@@ -6,9 +6,10 @@
  * this prigram prints "Programming is positive, zero, or negative
  * Return: 0
  */
-inbt main(void)
+int main(void)
 {
 	char ch;
+
 	for (ch = 'a' ; ch <= 'z' ; ch++)
 	{
 		if (ch != 'e' && ch != 'q')
