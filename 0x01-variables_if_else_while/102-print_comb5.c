@@ -1,36 +1,31 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- * main - print
+ * main - print random number
  *
- * Return: return zero
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n1 = 0, n2;
+	int i, j;
 
-	while (n1 <= 99)
+	for (i = 0; i < 100; i++)
 	{
-		n2 = n1;
-		while (n2 <= 99)
+		for (j = 0; j < 100; j++)
 		{
-			if (n2 != n1)
+			if (i < j)
 			{
-				putchar((n1 / 10) + 48);
-				putchar((n1 % 10) + 48);
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
 				putchar(' ');
-				putchar((n2 / 10) + 48);
-				putchar((n1 % 10) + 48);
-
-				if (n1 != 98 || n2 != 98)
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			++n2;
 		}
-		++n1;
 	}
 	putchar('\n');
 	return (0);
