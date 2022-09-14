@@ -1,10 +1,11 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * _islower - function to check for lowercase character
- * @c: is the int that will use for the argument of the function
+ * _islower -to check for lowercase character
+ * @c: int c is passed into the function as argument
  * Return: 0
  */
-int _putchar(int c)
+int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
