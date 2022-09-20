@@ -1,11 +1,10 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * puts2 - prints every other character
- * @str: string
+ * puts2 - function to print only one character out of two
+ * @str: input
  *
- * Return: nothing
+ * Return: print
  */
 
 void puts2(char *str)
