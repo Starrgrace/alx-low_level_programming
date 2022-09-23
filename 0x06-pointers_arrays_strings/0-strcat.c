@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
- * _strcat - concatenates the string pointed to by @src to the end of the string pointed to by @dest
+ * _strcat - use concatenation to join strings
  * @dest: string that will be appended
- * @src: string to be concatenated upon
+ * @src: source string
  *
- * Return: returns poiner to @dest
+ * Return: A pointer to the destination
  */
 char *_strcat(char *dest, char *src)
 {
@@ -13,7 +12,9 @@ char *_strcat(char *dest, char *src)
 
 	while (dest[index++])
 		dest_len++;
+
 	for (index = 0; src[index]; index++)
 		dest[dest_len++] = src[index];
+
 	return (dest);
 }
