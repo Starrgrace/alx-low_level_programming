@@ -35,8 +35,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	if (num < 0) /* account for negative n bytes */
 		return (NULL);
-			if (num >= _strlen(s2)) /*account for n too big */
-				num = _strlen(s2);
+	if (num >= _strlen(s2)) /* account for n too big */
+		num = _strlen(s2);
 
 	len = _strlen(s1) + num + 1; /* +1 to account for null pointer */
 
